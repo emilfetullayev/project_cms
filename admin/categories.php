@@ -1,15 +1,10 @@
 <?php include "includes/admin_header.php" ?>
 
-    <div id="wrapper">
-
-    
-
+    <div id="wrapper">  
     <?php include 'includes/admin_navigation.php' ?>
 
         <div id="page-wrapper">
-
             <div class="container-fluid">
-
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
@@ -17,11 +12,9 @@
                             Welcome to Admin
                             <small>Author</small>
                         </h1>
-
                         <div class="col-xs-6">
                              <?php
-                                    insert_categories();
-                             
+                                    insert_categories();                            
                                 ?>
                         	<form action="" method="post">
                         		<div class="form-group">
@@ -35,15 +28,8 @@
 
                           <?php include './includes/update_categories.php' ?>
 
-                        </div>
-                     
-
-                               
-
-                          <div class="col-xs-6">
-
-                          
-            
+                        </div>                                                  
+                          <div class="col-xs-6">                                  
                                 <table class="table table-bordered table-hover">
                                     <thead>
                                         <tr>
@@ -57,13 +43,7 @@
                                        ?>
                                   <?php
                                        deleteCategories();
-                                  ?>  
-
-
-                                         
-                                          
-                                    
-                                   
+                                  ?>                                                                                                                                                        
                                     </tbody>
                                 </table>
                             </div>
