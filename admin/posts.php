@@ -2,8 +2,6 @@
 
     <div id="wrapper">
 
-    
-
     <?php include 'includes/admin_navigation.php' ?>
 
         <div id="page-wrapper">
@@ -48,10 +46,7 @@
                           }
 
                       ?>
-
-                
-                            
-              
+            
                     </div>
                 </div>
                 <!-- /.row -->
