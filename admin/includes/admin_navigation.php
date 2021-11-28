@@ -31,9 +31,7 @@
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-
-                    
+              <ul class="nav navbar-nav side-nav">                   
                         <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown"><i class="fa fa-fw fa-arrows-v"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="posts_dropdown" class="collapse">
@@ -48,11 +46,8 @@
 
                     <li>
                         <a href="./categories.php"><i class="fa fa-fw fa-dashboard"></i> Categories</a>
-                    </li>
-                   
-                   
-                  
-                  
+                    </li>                   
+                                                      
                     <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li>
@@ -61,25 +56,17 @@
                         <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Comments</a>
                     </li>
 
-                   
-              
-
-
-                           <li>
+                    <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown"><i class="fa fa-fw fa-arrows-v"></i> Users <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="posts_dropdown" class="collapse">
-                            <li>
-                                <a href="#">Dropdown item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown item</a>
-                            </li>
-
-
-                        </ul>
-
-                        
-                          <li>
+                    <li>
+                         <a href="#">Dropdown item</a>
+                    </li>
+                     <li>
+                          <a href="#">Dropdown item</a>
+                     </li>
+                 </ul>                       
+                     <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> Profile</a>
                     </li>
                     </li>
