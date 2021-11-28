@@ -1,27 +1,20 @@
 <?php include 'includes/db.php' ?>
 <?php include 'includes/header.php' ?>
-
 <?php include 'includes/navigation.php' ?>
 
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
-
             <!-- Blog Entries Column -->
             <div class="col-md-8">
-
-
                 <?php
                    if(isset($_GET['p_id'])) {
                     $the_post_id = $_GET['p_id'];
                 }
 
-
-
                      $query = "SELECT * FROM posts WHERE post_id = $the_post_id";
 
-                       $select_all_posts_query = mysqli_query($connection, $query);
+                     $select_all_posts_query = mysqli_query($connection, $query);
 
                       while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
                            $post_title = $row['post_title'];
@@ -30,7 +23,6 @@
                            $post_image = $row['post_image'];
                            $post_content = $row['post_content'];
                           ?>
-
 
                 <h1 class="page-header">
                     Page Heading
@@ -52,18 +44,12 @@
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 <hr>
-
                        <?php  } ?>
-
-
-
                        <?php
                           if(isset($_POST['create_comment'])) {
                             echo $_POST['comment_author'];
                           }
                        ?>
-
-
                             <!-- Comments Form -->
                 <div class="well">
                     <h4>Leave a Comment:</h4>
@@ -83,11 +69,7 @@
                         <button type="submit" name="create_comment" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
-
                 <hr>
-
-                <!-- Posted Comments -->
-
                 <!-- Comment -->
                 <div class="media">
                     <a class="pull-left" href="#">
@@ -127,10 +109,7 @@
                     </div>
                 </div>
 
-
-                <!-- Second Blog Post -->
-         
-
+                <!-- Second Blog Post -->       
             </div>
 
         <?php include 'includes/sidebar.php' ?>
