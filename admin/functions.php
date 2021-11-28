@@ -14,8 +14,7 @@ function comfirm($result) {
 
            if(isset($_POST['submit'])) {
 
-                                   $cat_title = $_POST['cat_title'];
-                                  //empty parametre olaraq girilen deyerin bos olub olmadigini yoxlayit
+                                   $cat_title = $_POST['cat_title'];                    
                                   if(empty($cat_title)) {
                                     echo "This field sholud not be em";
                                   }else {
@@ -29,9 +28,6 @@ function comfirm($result) {
                                   }
                               }
                          }
-
-
-
 
 function findAllCategories(){
 	   global $connection;
@@ -54,9 +50,6 @@ function findAllCategories(){
 
 }
 
-
-
-
 function deleteCategories() {
 
          global $connection;
@@ -70,17 +63,5 @@ function deleteCategories() {
                 echo 'Alinmadi';
                  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>
